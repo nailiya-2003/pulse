@@ -1,0 +1,52 @@
+@font-face {
+    font-family:'MuseoModerno';
+    src: url('../../fonts/MuseoModerno/static/MuseoModerno-Medium.ttf'),
+    url('../../fonts/MuseoModerno/static/MuseoModerno-Light.ttf');
+    font-weight: normal; /* Для обычного стиля */
+    font-weight: bold; /* Для жирного стиля */
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        width: 250px;
+        img {
+            width: 90%;
+        }
+    }
+    &__official {
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 12px;
+        
+        span {
+            display: block;
+            font-size: 18px;
+            line-height: 18px; 
+            margin-top: 7px; 
+            font-family:'MuseoModerno';          
+        }
+    }
+    &__phone {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        font-family:'MuseoModerno';
+        text-decoration: none;
+        &:hover {
+            color: #FFF;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+} 
