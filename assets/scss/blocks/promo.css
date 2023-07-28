@@ -1,7 +1,10 @@
 .promo {
   min-height: 650px;
   padding: 21px 0px 93px;
-  background: url("../../images/bg.png"), center center/cover no-repeat;
+  background: url("../../images/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .promo__wrapper {
   display: -webkit-box;
