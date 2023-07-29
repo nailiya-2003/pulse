@@ -1,4 +1,3 @@
-@import 'buttons';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,4 +8,6 @@
     margin: 0 auto;
 }
 
+@import 'blocks/consultation';
+@import 'blocks/titles'
 

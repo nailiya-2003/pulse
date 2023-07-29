@@ -8,4 +8,26 @@
 .container {
   max-width: 950px;
   margin: 0 auto;
+}
+
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 108px 0;
+  background: url("../images/bg2.png"), center center/cover no-repeat;
+}
+.consultation__descr {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+}
+
+h1.title {
+  color: #FFF;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 150% */
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
