@@ -11,7 +11,7 @@
             margin: 0 auto;
         }
     }
-    .prev, .next{
+    .slick-prev, .slick-next{
         position: absolute;
         top: 50%;
         transform: translateX(-50%);
@@ -23,14 +23,14 @@
             height: 50px;
         }
     }
-    .next {
+    .slick-next {
         left: auto;
         right: -66px;
     }
-    .tns-slider {
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-    }
+    // .tns-slider {
+    //     img {
+    //         display: block;
+    //         margin: 0 auto;
+    //     }
+    // }
 }
