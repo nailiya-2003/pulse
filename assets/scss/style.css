@@ -90,4 +90,140 @@ h1.title {
 .carousel .slick-next {
   left: auto;
   right: -66px;
+}
+
+.catalog {
+  padding: 73px;
+}
+.catalog__tabs {
+  margin-top: 46px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.catalog__tab {
+  width: 223px;
+  height: 52px;
+  border: 2px solid #D0D0D0;
+  color: #6B6B6B;
+  text-align: center;
+  font-size: 18px;
+  line-height: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.catalog__tab:hover {
+  -webkit-box-shadow: 1px 1px 15px #9c9c9c;
+          box-shadow: 1px 1px 15px #9c9c9c;
+}
+.catalog__tab div {
+  -webkit-transform: skewX(25deg);
+          transform: skewX(25deg);
+}
+.catalog__tab_active {
+  color: #FFF;
+  border: none;
+  background-color: #C70101;
+}
+.catalog__tab_active:hover {
+  -webkit-box-shadow: 2px 2px 15px #C70101;
+          box-shadow: 2px 2px 15px #C70101;
+}
+.catalog__content {
+  margin-top: 60px;
+}
+.catalog-item {
+  width: 303px;
+  min-height: 442px;
+  border: 2px solid #E8E8E8;
+  padding: 20px 18px 21px 23px;
+}
+.catalog-item__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 200px;
+}
+.catalog-item__subtitle {
+  color: #0D0D0D;
+  text-align: center;
+  font-family: MuseoModerno;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.catalog-item__descr {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.catalog-item__link {
+  display: block;
+  color: #C70101;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px; /* 100% */
+  text-align: center;
+  margin-top: 10px;
+}
+.catalog-item hr {
+  margin-top: 17px;
+  background-color: #E8E8E8;
+  margin-bottom: 21px;
+  border-bottom: 0;
+}
+.catalog-item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog-item__old-price {
+  color: #555;
+  font-family: MuseoModerno;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px; /* 100% */
+  text-decoration: line-through;
+}
+.catalog-item__price {
+  color: #050505;
+  font-family: MuseoModerno;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+}
+.catalog h1.title {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px; /* 150% */
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

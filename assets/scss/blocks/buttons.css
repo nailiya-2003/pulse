@@ -37,4 +37,9 @@
   color: #FFF;
   font-size: 16px;
   background-color: #C70101;
+}
+.button_mini {
+  width: 135px;
+  height: 44px;
+  font-size: 14px;
 }/*# sourceMappingURL=buttons.css.map */
