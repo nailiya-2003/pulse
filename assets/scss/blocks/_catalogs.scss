@@ -37,16 +37,24 @@
                 box-shadow: 2px 2px 15px #C70101;
             }
         }
-   
     }
     &__content {
         margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 303px;
         min-height: 442px;
         border: 2px solid #E8E8E8;
         padding: 20px 18px 21px 23px;
+        overflow: hidden;
+        margin-bottom: 20px;
         &__img {
             display: block;
             margin: 0 auto;
@@ -68,7 +76,20 @@
             font-weight: 300;
             margin-top: 15px;
         }
-        &__link {
+        &__link{
+            display: block;
+            color: #C70101;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px; /* 100% */
+            text-align: center;
+            margin-top: 10px;
+        }
+        &__back {
+            position: absolute;
+            right: 52%;
+            bottom: 0;
             display: block;
             color: #C70101;
             text-align: center;
@@ -106,6 +127,54 @@
             font-weight: 700;
             line-height: 20px; /* 100% */
         }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            position: relative;
+            width: 50%;
+            transform: translateX(-100%);
+            transition: 0.5s all;
+            margin-right: 20px;
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+        &__list {
+            position: relative;
+            width: 50%;
+            transform: translateX(0%);
+            padding-right: 20px;
+            margin-left: 20px;
+            transition: 0.5s all;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            &_active {
+                position: relative;
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li {
+                position: relative;
+                color: #555;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                margin-bottom: 20px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 7px;
+                    background-color: #C70101;
+                    left: -17px;
+                    top: 7px;
+                }
+            }
+        } 
     }
     h1.title {
         color: #0D0D0D;
