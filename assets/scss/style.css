@@ -59,6 +59,19 @@ h1.title {
 .form-feed input:nth-child(3) {
   margin-bottom: 20px;
 }
+.form-feed__mt25 {
+  margin-top: 25px;
+}
+
+#consultation-form .error {
+  text-align: center;
+  border: 2px solid red;
+}
+#consultation-form label.error {
+  color: #fff;
+  border: none;
+  margin-bottom: 18px;
+}
 
 .carousel {
   padding: 81px 0px;
@@ -426,4 +439,62 @@ h1.title {
 }
 .footer__social-item img {
   height: 27px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  top: 0;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  min-height: 400px;
+  background-color: #f2f2f2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 38px 40px 40px;
+}
+.modal__close {
+  position: absolute;
+  right: -41px;
+  line-height: 21px;
+  top: 0px;
+  font-size: 40px;
+  color: #C70101;
+  line-height: 21px;
+  cursor: pointer;
+}
+.modal__subtitle {
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+.modal__descr {
+  color: #0d0d0d;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.modal_mini {
+  min-height: 140px;
+}
+.modal .error {
+  text-align: center;
+  border: 2px solid red;
+}
+.modal label.error {
+  border: none;
+  margin-bottom: 18px;
+}
+
+#consultation, #order, #thanks {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
