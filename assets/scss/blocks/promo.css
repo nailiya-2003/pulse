@@ -143,4 +143,12 @@
   font-weight: 300;
   line-height: 18px;
   text-decoration-line: underline;
+}
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s infinite linear;
+          animation: heartbeat 1.5s infinite linear;
+}
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }/*# sourceMappingURL=promo.css.map */

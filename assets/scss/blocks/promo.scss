@@ -130,4 +130,12 @@
             text-decoration-line: underline;
         }
     }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s infinite linear;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }

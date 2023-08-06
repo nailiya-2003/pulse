@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
       $('.carousel__inner').slick({
             infinite: true,
@@ -101,13 +102,22 @@ $(document).ready(function(){
          $.ajax ({
             type: "POST",
             url: "mailer/smart.php",
-            data: $(this).serialize(),
+            data: $(this).serialize()
          }).done(function() {
-            $(this).find('input').val('')
+            $(this).find('input').val('');
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
 
-
-            $('form').trigger('reset')
-         })
-         return false
-      })
+            $('form').trigger('reset');
+         });
+         return false;
+      });
+      $(window).scroll(function() {
+            if ($(this).scrollTop() > 1400) {
+                  $('.pageup').fadeIn();
+            } else {
+                  $('.pageup').fadeOut(); 
+            }
+      });
+      new WOW().init();
 });
