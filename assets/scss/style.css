@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
@@ -37,6 +38,277 @@
   max-width: 950px;
   margin: 0 auto;
   position: relative;
+}
+
+.promo {
+  min-height: 650px;
+  padding: 21px 0px 93px;
+  background: url("../images/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 90px;
+}
+.promo__header {
+  color: #FFF;
+  text-align: right;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 100% */
+  text-transform: uppercase;
+}
+.promo__subheader {
+  color: #FFF;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+.promo__icons {
+  margin-top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+.promo__icon {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14px;
+  text-align: center;
+}
+.promo span {
+  display: block;
+  margin-top: 20px;
+  line-height: normal;
+}
+.promo__link {
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+.promo a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: none;
+}
+
+.advantages {
+  min-height: 473px;
+  background-color: #F6F6F6;
+  padding: 73px 0px 65px 0px;
+}
+.advantages h1 {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 100% */
+}
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 65px;
+}
+.advantages__items {
+  text-align: center;
+}
+.advantages__items .cup {
+  margin-top: 20px;
+}
+.advantages__items .cup__title {
+  margin-top: 25px;
+}
+.advantages__title {
+  margin-top: 30px;
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.advantages__descr {
+  margin-top: 20px;
+  width: 275px;
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px; /* 128.571% */
+}
+.advantages__descr span {
+  color: #F00;
+  font-family: MuseoModerno;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-decoration-line: underline;
+}
+.advantages__icon_animated {
+  -webkit-animation: heartbeat 1.5s infinite linear;
+          animation: heartbeat 1.5s infinite linear;
+}
+.advantages__icon_animated:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@font-face {
+  font-family: "MuseoModerno";
+  src: url("../../fonts/MuseoModerno/static/MuseoModerno-Medium.ttf"), url("../../fonts/MuseoModerno/static/MuseoModerno-Light.ttf");
+  font-weight: normal; /* Для обычного стиля */
+  font-weight: bold; /* Для жирного стиля */
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  width: 250px;
+}
+.header__logo img {
+  width: 90%;
+}
+.header__official {
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 12px;
+}
+.header__official span {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 7px;
+  font-family: "MuseoModerno";
+}
+.header__phone {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: "MuseoModerno";
+  text-decoration: none;
+}
+.header__phone:hover {
+  color: #FFF;
+}
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@font-face {
+  font-family: "MuseoModerno";
+  src: url("../../fonts/MuseoModerno/static/MuseoModerno-Medium.ttf"), url("../../fonts/MuseoModerno/static/MuseoModerno-Light.ttf");
+  font-weight: normal;
+  font-weight: bold;
+}
+.button {
+  display: block;
+  width: 153px;
+  padding: 6px 10px;
+  margin-top: 3px;
+  height: 32px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #C70101;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.button:hover {
+  background-color: #ff3a3a;
+  -webkit-box-shadow: 3px 3px 20px #ff6f6f;
+          box-shadow: 3px 3px 20px #ff6f6f;
+}
+.button__main {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  margin-top: 68px;
+}
+.button__submit {
+  width: 100%;
+  height: 58px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 16px;
+  background-color: #C70101;
+}
+.button_mini {
+  width: 135px;
+  height: 44px;
+  font-size: 14px;
 }
 
 .consultation {

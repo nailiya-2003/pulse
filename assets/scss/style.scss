@@ -11,7 +11,9 @@
     position: relative;
    
 }
-
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
 @import 'blocks/consultation';
 @import 'blocks/titles';
 @import 'blocks/forms';
@@ -23,4 +25,4 @@
 @import 'blocks/pageup';
 @import 'libs/animate.min';
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/slick'
+@import 'libs/slick';
